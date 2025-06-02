@@ -55,15 +55,15 @@ return [
         'dir' => 'src',
         'webroot' => 'webroot',
         'wwwRoot' => WWW_ROOT,
-        //'baseUrl' => env('SCRIPT_NAME'),
+        // 'baseUrl' => env('SCRIPT_NAME'),
         'fullBaseUrl' => false,
         'imageBaseUrl' => 'img/',
         'cssBaseUrl' => 'css/',
         'jsBaseUrl' => 'js/',
         'paths' => [
-            'plugins' => [ROOT . DS . 'plugins' . DS],
-            'templates' => [ROOT . DS . 'templates' . DS],
-            'locales' => [RESOURCES . 'locales' . DS],
+            'plugins' => [ROOT.DS.'plugins'.DS],
+            'templates' => [ROOT.DS.'templates'.DS],
+            'locales' => [RESOURCES.'locales'.DS],
         ],
     ],
 
@@ -87,7 +87,7 @@ return [
      * enable timestamping regardless of debug value.
      */
     'Asset' => [
-        //'timestamp' => true,
+        // 'timestamp' => true,
         // 'cacheTime' => '+1 year'
     ],
 
@@ -110,7 +110,7 @@ return [
         '_cake_core_' => [
             'className' => FileEngine::class,
             'prefix' => 'myapp_cake_core_',
-            'path' => CACHE . 'persistent' . DS,
+            'path' => CACHE.'persistent'.DS,
             'serialize' => true,
             'duration' => '+1 years',
             'url' => env('CACHE_CAKECORE_URL', null),
@@ -125,7 +125,7 @@ return [
         '_cake_model_' => [
             'className' => FileEngine::class,
             'prefix' => 'myapp_cake_model_',
-            'path' => CACHE . 'models' . DS,
+            'path' => CACHE.'models'.DS,
             'serialize' => true,
             'duration' => '+1 years',
             'url' => env('CACHE_CAKEMODEL_URL', null),
@@ -169,14 +169,14 @@ return [
      *   The conventional location for custom renderers is in `src/Error`. Your exception renderer needs to
      *   implement the `render()` method and return either a string or Http\Response.
      *   `errorRenderer` - string - The class responsible for rendering PHP errors. The selected
-     *   class will be used for both web and CLI contexts. If you want different classes for each environment 
+     *   class will be used for both web and CLI contexts. If you want different classes for each environment
      *   you'll need to write that conditional logic as well. Error renderers need to
      *   to implement the `Cake\Error\ErrorRendererInterface`.
      * - `skipLog` - array - List of exceptions to skip for logging. Exceptions that
      *   extend one of the listed exceptions will also be skipped for logging.
      *   E.g.:
      *   `'skipLog' => ['Cake\Http\Exception\NotFoundException', 'Cake\Http\Exception\UnauthorizedException']`
-     * - `extraFatalErrorMemory` - int - The number of megabytes to increase the memory limit by 
+     * - `extraFatalErrorMemory` - int - The number of megabytes to increase the memory limit by
      *   when a fatal error is encountered. This allows
      *   breathing room to complete logging or error handling.
      * - `ignoredDeprecationPaths` - array - A list of glob compatible file paths that deprecations
@@ -239,8 +239,8 @@ return [
             /*
              * It is recommended to set these options through your environment or app_local.php
              */
-            //'username' => null,
-            //'password' => null,
+            // 'username' => null,
+            // 'password' => null,
             'client' => null,
             'tls' => false,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
@@ -263,8 +263,8 @@ return [
             /*
              * Will by default be set to config value of App.encoding, if that exists otherwise to UTF-8.
              */
-            //'charset' => 'utf-8',
-            //'headerCharset' => 'utf-8',
+            // 'charset' => 'utf-8',
+            // 'headerCharset' => 'utf-8',
         ],
     ],
 
@@ -296,12 +296,18 @@ return [
             'className' => Connection::class,
             'driver' => Mysql::class,
             'persistent' => false,
+            'host' => 'localhost',
+            'username' => 'cakephp',
+            'password' => 'AngelF00dC4k3@',
+            'database' => 'cake_cms',
+            'encoding' => 'utf8mb4',
             'timezone' => 'UTC',
+            'cacheMetadata' => true,
 
             /*
              * For MariaDB/MySQL the internal default changed from utf8 to utf8mb4, aka full utf-8 support, in CakePHP 3.6
              */
-            //'encoding' => 'utf8mb4',
+            // 'encoding' => 'utf8mb4',
 
             /*
              * If your MySQL server is configured with `skip-character-set-client-handshake`
@@ -329,7 +335,7 @@ return [
              * mysql configuration directive 'innodb_stats_on_metadata = 0'
              * which is the recommended value in production environments
              */
-            //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
+            // 'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
         ],
 
         /*
@@ -340,12 +346,12 @@ return [
             'driver' => Mysql::class,
             'persistent' => false,
             'timezone' => 'UTC',
-            //'encoding' => 'utf8mb4',
+            // 'encoding' => 'utf8mb4',
             'flags' => [],
             'cacheMetadata' => true,
             'quoteIdentifiers' => false,
             'log' => false,
-            //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
+            // 'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
         ],
     ],
 
