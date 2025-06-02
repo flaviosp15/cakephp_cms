@@ -1,14 +1,15 @@
 <h1>Articles</h1>
-<?php echo $this->Html->link('Add Article', ['action' => 'add']); ?>
+<p><?php echo $this->Html->link('Add Article', ['action' => 'add']); ?></p>
 <table>
     <tr>
         <th>Title</th>
         <th>Created</th>
+        <th>Action</th>
     </tr>
 
-    <!-- Here is where we iterate through our $articles query object, printing out article info -->
+<!-- Here's where we iterate through our $articles query object, printing out article info -->
 
-    <?php foreach ($articles as $article) { ?>
+<?php foreach ($articles as $article) { ?>
     <tr>
         <td>
             <?php echo $this->Html->link($article->title, ['action' => 'view', $article->slug]); ?>
@@ -16,6 +17,10 @@
         <td>
             <?php echo $article->created->format(DATE_RFC850); ?>
         </td>
+        <td>
+            <?php echo $this->Html->link('Edit', ['action' => 'edit', $article->slug]); ?>
+        </td>
     </tr>
-    <?php } ?>
+<?php } ?>
+
 </table>
