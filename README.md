@@ -1,6 +1,6 @@
 # CakePHP Application
 
-# O que você precisa saber antes de tentar executar esse projeto?
+# O que você precisa saber antes de seguir adiante?
 
 -   É necessário ter o MySQL instalado na sua máquina, caso não tenha, acesse o link da documentação (https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/) para saber como instalá-lo.
 -   Após inicializar o servidor do MySQL, você deve utilizar esses comandos para criar o banco de dados e as tabelas que serão utilizadas no projeto:
