@@ -64,3 +64,7 @@ VALUES
 -   Abra o terminal e entre na pasta do projeto com o seguinte comando: `cd Caminho/Do/Seu/Diretorio/cakephp_cms`.
 -   Após acessar à pasta do projeto, execute o comando `bin/cake server` para rodar o servidor da aplicação.
 -   Utilize URL http://localhost:8765/ para executá-la no seu navegador.
+
+# Como ficou o projeto?
+
+Aqui estão algumas capturas de tela das principais funcionalidades do projeto ("consultar", "incluir", "alterar" e "excluir").
