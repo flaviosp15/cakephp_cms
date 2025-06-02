@@ -19,6 +19,11 @@
         </td>
         <td>
             <?php echo $this->Html->link('Edit', ['action' => 'edit', $article->slug]); ?>
+            <?php echo $this->Form->postLink(
+                'Delete',
+                ['action' => 'delete', $article->slug],
+                ['confirm' => 'Are you sure?']);
+    ?>
         </td>
     </tr>
 <?php } ?>
