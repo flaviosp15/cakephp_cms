@@ -1,6 +1,6 @@
 # CakePHP Application
 
-# O que você precisa saber antes de tentar executar esse projeto?
+# O que você precisa saber antes de seguir adiante?
 
 -   É necessário ter o MySQL instalado na sua máquina, caso não tenha, acesse o link da documentação (https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/) para saber como instalá-lo.
 -   Após inicializar o servidor do MySQL, você deve utilizar esses comandos para criar o banco de dados e as tabelas que serão utilizadas no projeto:
@@ -63,7 +63,7 @@ VALUES
 -   Faça o download do repositório.
 -   Abra o terminal e entre na pasta do projeto com o seguinte comando: `cd Caminho/Do/Seu/Diretorio/cakephp_cms`.
 -   Após acessar à pasta do projeto, execute o comando `bin/cake server` para rodar o servidor da aplicação.
--   Utilize URL http://localhost:8765/ para executá-la no seu navegador.
+-   Utilize a URL http://localhost:8765/articles para acessar à página principal.
 
 # Como ficou o projeto?
 
