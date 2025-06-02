@@ -68,3 +68,23 @@ VALUES
 # Como ficou o projeto?
 
 Aqui estão algumas capturas de tela das principais funcionalidades do projeto ("consultar", "incluir", "alterar" e "excluir").
+
+### Consulta de artigos
+
+![tela-1](images/tela-1.png)
+![tela-2](images/tela-2.png)
+
+### Incluir um artigo
+
+![tela-5](images/tela-5.png)
+![tela-6](images/tela-6.png)
+
+### Alterar um artigo
+
+![tela-3](images/tela-3.png)
+![tela-4](images/tela-4.png)
+
+### Deletar um artigo
+
+![tela-7](images/tela-7.png)
+![tela-8](images/tela-8.png)
