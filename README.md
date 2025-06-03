@@ -68,7 +68,7 @@ VALUES
 
 Aqui estão algumas capturas de tela das principais funcionalidades do projeto ("consultar", "incluir", "alterar" e "excluir").
 
-### Consulta de artigos
+### Consultar um artigo
 
 ![tela-1](images/tela-1.png)
 ![tela-2](images/tela-2.png)
