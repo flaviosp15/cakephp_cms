@@ -59,8 +59,8 @@ VALUES
 # Como executar esse projeto?
 
 -   Faça o download do repositório.
--   Abra o terminal e entre na pasta do projeto com o seguinte comando: `cd Caminho/Do/Seu/Diretorio/cakephp_cms`.
 -   Preencha o arquivo `Caminho/Do/Seu/Diretorio/cakephp_cms/config/app.php`, na configuração de 'Datasources', com as credenciais de acesso ao MySQL para que o CakePHP consiga conectar com sucesso.
+-   Abra o terminal e entre na pasta do projeto com o seguinte comando: `cd Caminho/Do/Seu/Diretorio/cakephp_cms`.
 -   Após acessar à pasta do projeto, execute o comando `bin/cake server` para rodar o servidor da aplicação.
 -   Utilize a URL http://localhost:8765/articles para acessar à página principal.
 
