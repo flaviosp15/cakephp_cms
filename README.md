@@ -56,12 +56,11 @@ VALUES
 (1, 'First Post', 'first-post', 'This is the first post.', 1, NOW(), NOW());
 ```
 
--   Preencha o arquivo `Caminho/Do/Seu/Diretorio/cakephp_cms/config/app.php`, na configuração de 'Datasources', com as credenciais de acesso ao MySQL para que o CakePHP consiga conectar com sucesso.
-
 # Como executar esse projeto?
 
 -   Faça o download do repositório.
 -   Abra o terminal e entre na pasta do projeto com o seguinte comando: `cd Caminho/Do/Seu/Diretorio/cakephp_cms`.
+-   Preencha o arquivo `Caminho/Do/Seu/Diretorio/cakephp_cms/config/app.php`, na configuração de 'Datasources', com as credenciais de acesso ao MySQL para que o CakePHP consiga conectar com sucesso.
 -   Após acessar à pasta do projeto, execute o comando `bin/cake server` para rodar o servidor da aplicação.
 -   Utilize a URL http://localhost:8765/articles para acessar à página principal.
 
